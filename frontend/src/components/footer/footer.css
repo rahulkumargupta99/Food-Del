@@ -1,0 +1,116 @@
+/* footer.css */
+
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+    padding: 40px 20px; /* Adequate padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between columns */
+}
+
+.footer-content-left, .footer-content-center, .footer-content-right {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-content-left img {
+    width: 150px; /* Logo size */
+    margin-bottom: 20px;
+}
+
+.footer-content-left p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social-icons img {
+    width: 24px; /* Social icon size */
+    transition: opacity 0.3s;
+}
+
+.footer-social-icons img:hover {
+    opacity: 0.7; /* Hover effect */
+}
+
+.footer-content-center h2,
+.footer-content-right h2 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-bottom: 2px solid tomato; /* Highlight section titles */
+    padding-bottom: 5px;
+}
+
+.footer-content-center ul,
+.footer-content-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-content-center li,
+.footer-content-right li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-content-center li:hover,
+.footer-content-right li:hover {
+    color: tomato; /* Hover effect */
+    cursor: pointer;
+}
+
+.footer-content-center li a,
+.footer-content-right li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content-center li a:hover,
+.footer-content-right li a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #444; /* Subtle divider line */
+    margin: 20px 0;
+}
+
+.footer-copyright {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    color: #aaa; /* Lighter text for copyright */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content-left,
+    .footer-content-center,
+    .footer-content-right {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-content-left img {
+        width: 120px; /* Adjust logo size for smaller screens */
+    }
+}
