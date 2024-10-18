@@ -1,5 +1,5 @@
 import userModel from "../models/userModel.js";
-import { addToCart, removeFromCart, getCart } from '../controllers/CartController.js';
+import { addToCart, removeFromCart, getCart } from '../controllers/cartController.js';
 
 
 // Add items to user cart
