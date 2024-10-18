@@ -60,4 +60,4 @@ const List = ({url}) => {
   )
 }
 
-export default List
+export default List;
