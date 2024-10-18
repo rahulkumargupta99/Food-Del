@@ -10,23 +10,23 @@ import orderRouter from "./routes/orderRoute.js";
 const app = express();
 const port = process.env.PORT || 4000;
 
-const allowedOrigins = [
-    'https://food-delevery-lac.vercel.app',
-    'https://food-del-bice-ten.vercel.app'
-  ];
+// const allowedOrigins = [
+//     'https://food-delevery-lac.vercel.app',
+//     'https://food-del-bice-ten.vercel.app'
+//   ];
 
   
 app.use(express.json());
-// app.use(cors({origin: '*'}));
-app.use(cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-        callback(null, true);
-      } else {
-        callback(new Error('Not allowed by CORS'));
-      }
-    }
-  }));
+app.use(cors({origin: '*'}));
+// app.use(cors({
+//     origin: function (origin, callback) {
+//       if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+//         callback(null, true);
+//       } else {
+//         callback(new Error('Not allowed by CORS'));
+//       }
+//     }
+//   }));
 
 connectDB();
 
